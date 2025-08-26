@@ -49,6 +49,21 @@ public class MultiTest2BCAC {
 		}
 		
 	}
+	
+	@Test(priority=3)
+	public void AdvanceDropDown2() throws InterruptedException {
+		WebElement amazondropdown = driver.findElement(By.id("searchDropdownBox"));
+		Select sel = new Select(amazondropdown);
+		List<WebElement> li = sel.getOptions();
+		System.out.println(li.size());
+		
+		for (int i=0; i<=45; i++) { //error for i<=45 vs i<45
+			li.get(i).click();
+			System.out.println(li.get(i).getText());
+			
+		}
+		
+	}
 
 	@AfterClass
 	public void CleanUp() {
