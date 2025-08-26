@@ -46,6 +46,29 @@ public class MultiTest {
 		 * 
 		 * }
 		 */
+	
+	@Test(priority=2)
+	public void SelectDropDown2(){
+		WebElement dropdownoption = driver.findElement(By.id("searchDropdownBox"));
+		Select sel = new Select(dropdownoption);
+		sel.selectByIndex(4);
+		sel.selectByValue("search-alias=beauty");
+		sel.selectByVisibleText("Deals");
+		}
+	
+		/*
+		 * @Test(priority=2) public void AdvanceDropDown() throws InterruptedException {
+		 * WebElement amazondropdown = driver.findElement(By.id("searchDropdownBox"));
+		 * Select sel = new Select(amazondropdown); List<WebElement> li =
+		 * sel.getOptions(); System.out.println(li.size());
+		 * 
+		 * for (int i=0; i<=45; i++) { //error for i<=45 vs i<45 li.get(i).click();
+		 * System.out.println(li.get(i).getText());
+		 * 
+		 * }
+		 * 
+		 * }
+		 */
 
 	@AfterMethod
 	public void CleanUp() {
