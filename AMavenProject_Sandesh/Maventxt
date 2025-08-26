@@ -1,0 +1,10 @@
+We will load our code framework to Git Repo 
+
+Jenkins will take code from it Repo 
+
+Then Jenkins will call pom.xml -- calls Testng.xml -- call - scripting includes -- 
+Main functionality -- where we have to introduce page object model 
+
+now we completed pom.xml -- calls Testng.xml -- call - scripting 
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-24T06:56:08 CEST" name="Suite" finished-at="2025-08-24T06:57:02 CEST" duration-ms="54270">
+    <groups>
+    </groups>
+    <test started-at="2025-08-24T06:56:08 CEST" name="Test" finished-at="2025-08-24T06:57:02 CEST" duration-ms="54270">
+      <class name="com.test.MultiTest2BCAC">
+        <test-method is-config="true" signature="initialisation()[pri:0, instance:com.test.MultiTest2BCAC@47af7f3d]" started-at="2025-08-24T06:56:35 CEST" name="initialisation" finished-at="2025-08-24T06:56:51 CEST" duration-ms="16124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialisation -->
+        <test-method signature="SelectDropDown()[pri:1, instance:com.test.MultiTest2BCAC@47af7f3d]" started-at="2025-08-24T06:56:51 CEST" name="SelectDropDown" finished-at="2025-08-24T06:56:54 CEST" duration-ms="2894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectDropDown -->
+        <test-method signature="AdvanceDropDown()[pri:2, instance:com.test.MultiTest2BCAC@47af7f3d]" started-at="2025-08-24T06:56:54 CEST" name="AdvanceDropDown" finished-at="2025-08-24T06:57:01 CEST" duration-ms="7420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdvanceDropDown -->
+        <test-method is-config="true" signature="CleanUp()[pri:0, instance:com.test.MultiTest2BCAC@47af7f3d]" started-at="2025-08-24T06:57:01 CEST" name="CleanUp" finished-at="2025-08-24T06:57:02 CEST" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CleanUp -->
+      </class> <!-- com.test.MultiTest2BCAC -->
+      <class name="com.test.MultiTest">
+        <test-method is-config="true" signature="initialisation()[pri:0, instance:com.test.MultiTest@291ae]" started-at="2025-08-24T06:56:08 CEST" name="initialisation" finished-at="2025-08-24T06:56:31 CEST" duration-ms="22710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialisation -->
+        <test-method signature="SelectDropDown()[pri:1, instance:com.test.MultiTest@291ae]" started-at="2025-08-24T06:56:31 CEST" name="SelectDropDown" finished-at="2025-08-24T06:56:34 CEST" duration-ms="3313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectDropDown -->
+        <test-method is-config="true" signature="CleanUp()[pri:0, instance:com.test.MultiTest@291ae]" started-at="2025-08-24T06:56:34 CEST" name="CleanUp" finished-at="2025-08-24T06:56:35 CEST" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CleanUp -->
+      </class> <!-- com.test.MultiTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
