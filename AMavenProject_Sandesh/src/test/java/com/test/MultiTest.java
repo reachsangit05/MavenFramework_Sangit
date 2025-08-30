@@ -11,18 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class MultiTest {
-	WebDriver driver ;
-	
-	@BeforeMethod
-	public void initialisation() throws InterruptedException {
-		driver = new ChromeDriver();
-		driver.get("https://amazon.in/");
-		Thread.sleep(3000);
-		driver.manage().window().maximize();
-		System.out.println(driver.getTitle());
-		System.out.println(driver.getCurrentUrl());
-	}
+public class MultiTest extends SetUp{
 	
 	@Test(priority=1)
 	public void SelectDropDown(){
@@ -70,8 +59,4 @@ public class MultiTest {
 		 * }
 		 */
 
-	@AfterMethod
-	public void CleanUp() {
-		driver.quit();
-	}
 }
