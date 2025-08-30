@@ -17,7 +17,7 @@ public class MultiTest2BCAC extends SetUp{
 	
 	@Test(priority=1)
 	public void SelectDropDown(){
-		WebElement dropdownoption = driver.findElement(By.id("searchDropdownBox"));
+		WebElement dropdownoption = driver.findElement(By.id(prop.getProperty("DropDown_Box_Id")));
 		Select sel = new Select(dropdownoption);
 		sel.selectByIndex(4);
 		sel.selectByValue("search-alias=beauty");
@@ -26,7 +26,7 @@ public class MultiTest2BCAC extends SetUp{
 	
 	@Test(priority=2)
 	public void AdvanceDropDown() throws InterruptedException {
-		WebElement amazondropdown = driver.findElement(By.id("searchDropdownBox"));
+		WebElement amazondropdown = driver.findElement(By.id(prop.getProperty("DropDown_Box_Id")));
 		Select sel = new Select(amazondropdown);
 		List<WebElement> li = sel.getOptions();
 		System.out.println(li.size());

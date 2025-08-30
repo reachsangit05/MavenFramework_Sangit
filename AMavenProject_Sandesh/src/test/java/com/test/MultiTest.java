@@ -15,7 +15,7 @@ public class MultiTest extends SetUp{
 	
 	@Test(priority=1)
 	public void SelectDropDown(){
-		WebElement dropdownoption = driver.findElement(By.id("searchDropdownBox"));
+		WebElement dropdownoption = driver.findElement(By.id(prop.getProperty("DropDown_Box_Id")));
 		Select sel = new Select(dropdownoption);
 		sel.selectByIndex(4);
 		sel.selectByValue("search-alias=beauty");
@@ -38,7 +38,7 @@ public class MultiTest extends SetUp{
 	
 	@Test(priority=2)
 	public void SelectDropDown2(){
-		WebElement dropdownoption = driver.findElement(By.id("searchDropdownBox"));
+		WebElement dropdownoption = driver.findElement(By.id(prop.getProperty("DropDown_Box_Id")));
 		Select sel = new Select(dropdownoption);
 		sel.selectByIndex(4);
 		sel.selectByValue("search-alias=beauty");
